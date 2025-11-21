@@ -1,77 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <!-- 1. Viewport Meta Tag (Crucial for Bootstrap) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team - Tech Solution Inc.</title>
-    
-    <!-- 2. Bootstrap 5 CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-
-    <!-- 3. Header converted to Responsive Navbar -->
-    <!-- navbar-expand-lg: Turns into a hamburger menu on screens smaller than large (lg) -->
-    <!-- navbar-dark bg-dark: Dark theme for professional look -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <title>Our Team</title>
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
             <a class="navbar-brand" href="#">Tech Solution Inc.</a>
-            
-            <!-- Mobile Toggle Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+        </nav>
 
-        </div>
-    </nav>
-
-   
-    <main class="container my-5">
-        
-        <div class="text-center mb-4">
-            <h2>Our Leadership</h2>
-            <p class="lead text-muted">Meet the minds behind the technology.</p>
-        </div>
-
-        <!-- 5. Bootstrap Grid System for Team Members -->
-        <section class="row g-4 justify-content-center">
-            
-            <!-- Team Member 1 -->
-            <!-- col-md-6: Takes half width on medium screens and up -->
-            <!-- col-lg-4: Takes 1/3 width on large screens -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <article class="card h-100 text-center shadow-sm">
-                    <div class="card-body">
-                        <!-- Placeholder for an image circle -->
-                        <div class="rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px; font-size: 24px;">
-                            MN
-                        </div>
-                        <h3 class="card-title h4">Mehmet Nurhan</h3>
-                        <p class="card-text text-primary fw-bold">CEO</p>
+        <main>
+            <section class="team-section mt-5"> <div class="container">
+                <h2 class="text-center mb-5">Yönetim Kadrosu</h2>
                 
-                    </div>
-                </article>
-            </div>
-
-            <!-- Team Member 2 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <article class="card h-100 text-center shadow-sm">
-                    <div class="card-body">
-                        <div class="rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px; font-size: 24px;">
-                            AO
+                <div class="row justify-content-center"> <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card text-center shadow-sm"> <div class="card-body">
+                                <h3 class="card-title">Mehmet Nurhan</h3>
+                                <p class="card-text text-muted">CEO</p>
+                            </div>
                         </div>
-                        <h3 class="card-title h4">Ali Ozturk</h3>
-                        <p class="card-text text-primary fw-bold">CTO</p>
-                        
-                </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card text-center shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title">Ali Ozturk</h3>
+                                <p class="card-text text-muted">CTO</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-
         </section>
-    </main>
+        </main>
 
-    <!-- 6. Bootstrap Bundle JS (Required for Navbar Toggler to work) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    </body>
 </html>
